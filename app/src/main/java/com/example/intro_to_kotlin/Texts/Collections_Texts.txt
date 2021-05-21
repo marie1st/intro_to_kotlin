@@ -1,0 +1,20 @@
+//list and arrays
+//non-mutable lists, array
+//val/var name = listof<type>(val1, val2, ....)
+val weekdays = listOf<String>("Monday", "Tuesday", "Wednesday", "Thursday","Friday")
+weekdays.get(4)
+weekdays[4] = "friday"  //is not allow in non-mutable list
+weekdays = listOf("")
+//
+val trueOrFalseAnswerKey = arrayOf(false, true, true, false, false)
+trueOrFalseAnswerKey.set(2, false)
+trueOrFalseAnswerKey[2] = false  //allowed in array
+
+//mutable list, arrays
+var roster = mutableListOf<String>("Nimish", "sarah", "John")
+roster.add("Tracy")
+val nimish: String = roster.removeAt(0)
+
+var bread: String = "Bread"
+var shoppingList = arrayListOf<String>("Eggs", "Butter", "Shoes")
+shoppingList.add(0, bread)
